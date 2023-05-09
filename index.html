@@ -13,7 +13,60 @@
     
     <title>TicTacToe</title>
 </head>
-<body>
-    
+<body onload="render()">
+    <h1>TicTacToe</h1>
+    <h2 id="whoseTurnInfo"></h2>
+
+    <div id="winnerCard" class="winnerCard d-none">
+        <h3 id="winnerHeadline"></h3>
+        <img src="./img/game-over.png" alt="">
+    </div>
+
+    <table>
+        <tr>
+            <td onclick="chooseField(0)">
+                <div id="circleContainer0" class="circleContainer d-none"><img id="circleImg"  src="./img/circle.png" alt=""></div>
+                <div id="crossContainer0" class="crossContainer d-none"><img id="crossImg" src="./img/cross.png" alt=""></div>
+            </td>
+            <td onclick="chooseField(1)">
+                <div id="circleContainer1" class="circleContainer d-none"><img id="circleImg"  src="./img/circle.png" alt=""></div>
+                <div id="crossContainer1" class="crossContainer d-none"><img id="crossImg" src="./img/cross.png" alt=""></div>
+            </td>
+            <td onclick="chooseField(2)">
+                <div id="circleContainer2" class="circleContainer d-none"><img id="circleImg"  src="./img/circle.png" alt=""></div>
+                <div id="crossContainer2" class="crossContainer d-none"><img id="crossImg" src="./img/cross.png" alt=""></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td onclick="chooseField(3)">
+                <div id="circleContainer3" class="circleContainer d-none"><img id="circleImg"  src="./img/circle.png" alt=""></div>
+                <div id="crossContainer3" class="crossContainer d-none"><img id="crossImg" src="./img/cross.png" alt=""></div>
+            </td>
+            <td onclick="chooseField(4)">
+                <div id="circleContainer4" class="circleContainer d-none"><img id="circleImg"  src="./img/circle.png" alt=""></div>
+                <div id="crossContainer4" class="crossContainer d-none"><img id="crossImg" src="./img/cross.png" alt=""></div>
+            </td>
+            <td onclick="chooseField(5)">
+                <div id="circleContainer5" class="circleContainer d-none"><img id="circleImg"  src="./img/circle.png" alt=""></div>
+                <div id="crossContainer5" class="crossContainer d-none"><img id="crossImg" src="./img/cross.png" alt=""></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td onclick="chooseField(6)">
+                <div id="circleContainer6" class="circleContainer d-none"><img id="circleImg"  src="./img/circle.png" alt=""></div>
+                <div id="crossContainer6" class="crossContainer d-none"><img id="crossImg" src="./img/cross.png" alt=""></div>
+            </td>
+            <td onclick="chooseField(7)">
+                <div id="circleContainer7" class="circleContainer d-none"><img id="circleImg"  src="./img/circle.png" alt=""></div>
+                <div id="crossContainer7" class="crossContainer d-none"><img id="crossImg" src="./img/cross.png" alt=""></div>
+            </td>
+            <td onclick="chooseField(8)">
+                <div id="circleContainer8" class="circleContainer d-none"><img id="circleImg"  src="./img/circle.png" alt=""></div>
+                <div id="crossContainer8" class="crossContainer d-none"><img id="crossImg" src="./img/cross.png" alt=""></div>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
